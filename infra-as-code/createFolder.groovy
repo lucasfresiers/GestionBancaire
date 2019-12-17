@@ -15,3 +15,4 @@ progressBar()
 releaseButton()
 status()
 }
+}
