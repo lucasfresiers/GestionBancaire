@@ -6,7 +6,7 @@ pipeline {
         
         stage('Build') {
             steps {
-				 bat "mvn install"
+				 bat "mvn compile"
 			            }
         }
          stage('tests') {
@@ -16,6 +16,11 @@ pipeline {
                  bat "mvn pmd:pmd"
                  bat "mvn pmd:cpd"
 
+			            }
+        }
+         stage('package') {
+            steps {
+				 bat "mvn package"
 			            }
         }
         
