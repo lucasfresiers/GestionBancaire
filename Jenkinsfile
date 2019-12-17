@@ -8,6 +8,8 @@ pipeline {
 				 bat "mvn checkstyle:checkstyle"
                  bat "mvn spotbugs:spotbugs"
                  bat "mvn pmd:pmd"
+                 bat "mvn pmd:cpd"
+
 			            }
         }
         
