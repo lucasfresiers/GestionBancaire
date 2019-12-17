@@ -5,6 +5,8 @@ pipelineJob('GestionBancaire/buildProject') {
         git {
           remote {
             url('https://github.com/lucasfresiers/GestionBancaire')
+            credentials('git')
+
           }
           branch('*/master')
         }
