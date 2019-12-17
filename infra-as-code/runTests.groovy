@@ -5,10 +5,7 @@ job('GestionBancaire/runTests') {
                 url('https://github.com/lucasfresiers/GestionBancaire')
                 credentials('git')
             }
-            extensions {
-                cleanAfterCheckout()
-                relativeTargetDirectory('repo1')
-            }
+        
         }
     }
     steps {
