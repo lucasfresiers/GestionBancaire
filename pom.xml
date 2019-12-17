@@ -37,13 +37,7 @@
 			<version>3.1.0</version>
 			<type>maven-plugin</type>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
-		<dependency>
-			<groupId>com.github.spotbugs</groupId>
-			<artifactId>spotbugs-annotations</artifactId>
-			<version>3.1.12</version>
-			<scope>provided</scope>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/pmd/pmd -->
 		<dependency>
 			<groupId>pmd</groupId>

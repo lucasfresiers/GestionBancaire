@@ -2,20 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('tests') {
+       
+        
+        stage('Build') {
             steps {
-                 bat "mvn clean"
+				 bat "mvn install"
+			            }
+        }
+         stage('tests') {
+            steps {
 				 bat "mvn checkstyle:checkstyle"
                  bat "mvn spotbugs:spotbugs"
                  bat "mvn pmd:pmd"
                  bat "mvn pmd:cpd"
 
-			            }
-        }
-        
-        stage('Build') {
-            steps {
-				 bat "mvn install"
 			            }
         }
         
