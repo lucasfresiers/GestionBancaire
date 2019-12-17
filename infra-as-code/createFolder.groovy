@@ -5,7 +5,7 @@ folder(name) {
 listView(name) {
 columns {
 buildButton()
-disableProject(boolean icon = false)
+disableProject(false)
 lastBuildConsole()
 lastDuration()
 lastFailure()
