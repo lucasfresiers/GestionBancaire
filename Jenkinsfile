@@ -2,9 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('checkstyle') {
+        stage('tests') {
             steps {
 				 bat "mvn checkstyle:checkstyle"
+                 bat "mvn spotbugs:spotbugs"
+                 bat "mvn pmd:pmd"
 			            }
         }
         
