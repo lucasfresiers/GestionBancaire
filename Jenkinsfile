@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('tests') {
             steps {
+                 bat "mvn clean"
 				 bat "mvn checkstyle:checkstyle"
                  bat "mvn spotbugs:spotbugs"
                  bat "mvn pmd:pmd"
@@ -12,7 +13,7 @@ pipeline {
         
         stage('Build') {
             steps {
-				 bat "mvn clean install"
+				 bat "mvn install"
 			            }
         }
         
