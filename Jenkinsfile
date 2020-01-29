@@ -6,21 +6,21 @@ pipeline {
         
         stage('Build') {
             steps {
-				 bat "mvn compile"
+				 sh "mvn compile"
 			            }
         }
          stage('tests') {
             steps {
-				 bat "mvn checkstyle:checkstyle"
-                 bat "mvn spotbugs:spotbugs"
-                 bat "mvn pmd:pmd"
-                 bat "mvn pmd:cpd"
+				 sh "mvn checkstyle:checkstyle"
+                 sh "mvn spotbugs:spotbugs"
+                 sh "mvn pmd:pmd"
+                 sh "mvn pmd:cpd"
 
 			            }
         }
          stage('package') {
             steps {
-				 bat "mvn deploy"
+				 sh "mvn deploy"
 			            }
         }
         
