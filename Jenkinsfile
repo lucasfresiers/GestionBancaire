@@ -29,8 +29,7 @@ pipeline {
    stages {
       stage('Checkout') {
          steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/lucasfresiers/GestionBancaire']]])
-         }
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/lucasfresiers/GestionBancaire']]])         }
       }
       stage('Get info from POM') {
           steps {
