@@ -130,14 +130,14 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		<repositories>
-			    
-			<repository>
-				<id>nexusLocal</id>
-				<url>http://http://localhost:8081/repository/maven-public/</url>
-			</repository>
-		</repositories>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>nexusLocal</id>
+			<url>http://http://localhost:8081/repository/maven-public/</url>
+		</repository>                 
+	</repositories>
 	<reporting>
 		<plugins>
 			<plugin>
