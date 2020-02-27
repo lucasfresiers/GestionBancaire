@@ -16,13 +16,6 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
-	<distributionManagement>
-			<snapshotRepository>
-			   <id>nexus</id>
-			   <url>http://localhost:8081/repository/maven-snapshots/</url>
-			</snapshotRepository>
-		
-		 </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -137,6 +130,13 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		<repositories>
+			    
+			<repository>
+				<id>nexusLocal</id>
+				<url>http://http://localhost:8081/repository/maven-public/</url>
+			</repository>
+		</repositories>
 	</build>
 	<reporting>
 		<plugins>
