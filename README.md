@@ -1,5 +1,8 @@
 # GestionBancaire
-
+Groupe :
+- Louis DOUBLECOURT
+- Arthur GUERS
+- Lucas FRESIERS
 # Création des jobs automatiquement
 Nous avons utilisé le plugin JobDSL afin de générer nos jobs à partir de fichier groovy qui décrivent ces jobs.
 Il faut donc installer le plugin JobDSL sur Jenkins.
